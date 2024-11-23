@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "description": "TurboScribe transcription software",
+    "homepage": "https://github.com/<user>/turboscribe",
+    "license": "Proprietary",
+    "url": "https://github.com/<user>/turboscribe/archive/main.zip",
+    "hash": "SHA256_HASH_OF_ZIP_FILE", 
+    "extract_dir": "turboscribe-main",
+    "bin": [
+        "python", 
+        "-m", 
+        "pip", 
+        "install", 
+        "."
+    ],
+    "checkver": {
+        "url": "https://github.com/<user>/turboscribe/releases",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/<user>/turboscribe/archive/v$version.zip"
+    }
+}
